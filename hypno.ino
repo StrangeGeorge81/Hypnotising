@@ -1,0 +1,43 @@
+#include <Adafruit_NeoPixel.h>
+
+#define NUMPIXELS 12
+#define PIN 8
+
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+int nas = 0;
+//NUMPIXELS 12 <=> 0 to 11
+
+uint32_t rgbcolor = pixels.ColorHSV(hue, 255, brght);
+
+int hue = 0;
+// for colors, red or green
+// red ==> 0
+// green ==> 65535/3 (21845)
+
+int brght = 0;
+// brightness up and down
+// depends on repetion
+
+void hypno(){
+    //changes hue based on {rep()}
+
+}
+
+void rep(){
+    // time depending changes {hypno()}
+
+}
+
+
+
+
+
+void setup() {
+   pixels.begin();
+   
+}
+
+void loop() {
+
+}
