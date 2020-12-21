@@ -21,11 +21,18 @@ int brght = 0;
 
 void hypno(){
     //changes hue based on {rep()}
+    
 
 }
 
 void rep(){
     // time depending changes {hypno()}
+    int reption = 0;
+    for(int timer = 0; timer<10; timer++){
+
+        hypno();
+
+    }
 
 }
 
@@ -35,7 +42,7 @@ void rep(){
 
 void setup() {
    pixels.begin();
-   
+
 }
 
 void loop() {
