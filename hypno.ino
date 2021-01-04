@@ -29,7 +29,7 @@ void hypno(){
             delay(81);
         }
     }    
-    if (nas==5){
+    if (nas==6){
         hue=21845;
         for(nas=6; nas<=11; nas++){
             pixels.setPixelColor (nas, rgbcolor);
@@ -37,7 +37,7 @@ void hypno(){
             delay(118);
         }
         if (nas>=11){
-            nas=0;
+            nas = 0;
         }
     }
     
@@ -65,5 +65,5 @@ void setup() {
 }
 
 void loop() {
-    hypno();
+    rep();
 }
